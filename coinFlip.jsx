@@ -94,11 +94,17 @@ class CoinFlip extends React.Component{
 	}
 }
 
+function Index(){
+	return(
+		<div>
+			<CoinFlip title="Flip the coin" heads="quarter-coin-head.jpg" tails="half-dollar-coin-tail.jpg" />
+			<CoinFlip title="Flip the coin again!!" heads="buffalo-nickel-heads.jpg" tails="buffalo-nickel-tails.png" />
+		</div>	
+	)
+}
+
 ReactDOM.render(
 	// <h1>Sanity Check!</h1>,
-	<div>
-		<CoinFlip title="Flip the coin" heads="quarter-coin-head.jpg" tails="half-dollar-coin-tail.jpg" />
-		<CoinFlip title="Flip the coin again!!" heads="buffalo-nickel-heads.jpg" tails="buffalo-nickel-tails.png" />
-	</div>,
+	<Index />,
 	document.getElementById('root')
 )
